@@ -52,13 +52,11 @@ graph LR
 
 #### Core Platform
 - **Cloudflare Workers** – Serverless compute platform  
-- **ES6 Modules** – Modern JavaScript module system  
-- **Wrangler CLI** – Deployment and development tools  
+- **Wrangler CLI** – Local Deployment and development tools  
 
 #### Storage & Security
 - **Cloudflare R2** – S3-compatible object storage  
 - **Secret Store** – Centralized credential management  
-- **Environment Variables** – Configuration management  
 
 #### AI & Processing
 - **AI Gateway** – Request routing, caching, and analytics  
@@ -76,7 +74,7 @@ graph LR
 - **Notion API** – Note creation & workspace integration  
 - **Microsoft Graph** – OneNote support  
 - **OpenAI Services** – via Cloudflare AI Gateway  
-- **Facebook AI** – BART summarization  
+- **Facebook AI** –  via Cloudflare AI Gateway  
 
 ---
 ## 📊 Performance & Monitoring
@@ -84,14 +82,11 @@ graph LR
 ### 🔄 Request Flow
 1. **Authentication** – OAuth worker validates and exchanges tokens  
 2. **File Upload** – Audio files stored directly in the **R2 bucket**  
-3. **AI Processing** – Transcription and summarization run **in parallel**  
-4. **Response** – Returns structured data with performance metrics  
 
 ---
 
 ### 🔎 Observability Features
 - **End-to-End Request Tracing** – Each request tagged with a unique UUID  
-- **Processing Time Metrics** – Detailed timing for every operation  
 - **Business Analytics** – File sizes, compression ratios, and success rates  
 - **Error Tracking** – Detailed stack traces for easier debugging  
 
@@ -100,10 +95,8 @@ graph LR
 ### Secret Management
 - **Centralized credential storage** in Secret Store  
 - **No hardcoded secrets** – all sensitive data managed securely  
-- **Environment-specific configs** for staging/production  
 
 ### Authentication
 - **OAuth 2.0 flows** for Notion and OneNote  
-- **Proper JWT validation**  
 - **Strict CORS configuration** for Chrome extension origins  
 
