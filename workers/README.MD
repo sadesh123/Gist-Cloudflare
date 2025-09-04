@@ -17,11 +17,9 @@ graph LR
 
     C --> F[R2 Storage]
     C --> G[AI Gateway]
-    C --> H[Whisper AI]
-    C --> I[BART AI]
 
-    G --> H
-    G --> I
+    G --> H[Whisper AI]
+    G --> I[BART AI]
 ```
 ## 📁 Workers Structure
 
