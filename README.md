@@ -52,16 +52,6 @@ graph TB
 
 ---
 
-## 📂 Repository Structure
-/workers/
-├── r2-storage-worker/ # AI transcription and storage
-└── notion-oauth-worker/ # OAuth and secret management
-
-/chrome-extension/ # Browser extension source
-├── manifest.json # Extension configuration
-├── webpack.config.js # Build configuration
-└── package.json # Dependencies
-
 ## 🛠️ Technologies Used
 
 ### Frontend
